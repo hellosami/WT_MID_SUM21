@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<style>
+   .parent-container {
+       border: 1px solid #000;
+       width: 420px;
+       margin: 0 auto;
+   }
+
+   .child-container {
+       text-align: center;
+       font-family: 'Courier New', Courier, monospace;
+   }
+
+   h1 {
+       text-align: center;
+   }
+
+   table {
+       width: 100%;
+   }
+
+   caption {
+    font-family: 'Courier New', Courier, monospace;
+   }
+
+   tr:last-child td:nth-child(2) {
+       text-align: center;
+   }
+</style>
+<body>
+    
+    <div class="parent-container">
+        <h1>American International<br>University-Bangladesh</h1>
+
+        <div class="child-container">
+            <hr>
+            <span>Web Programming (SEC: A)</span><br>
+            <b>mid term exam</b>
+            <hr>
+        </div>
+
+        <table border="1">
+            <caption>Choose</caption>
+            <tr>
+                <td><a href="#">Aiub</a></td>
+                <td>
+                    <i>American International University-Bangladesh</i>
+                    <hr>
+                </td>
+                <td>
+                    <ul>
+                        <li>C</li>
+                        <li>S</li>
+                    </ul>
+                </td>
+            </tr>
+          
+            <tr>
+                <td>DEPT</td>
+                <td>
+                    <input type="radio" name="dept">CS
+                    <input type="radio" name="dept">CSE
+                    <input type="radio" name="dept">CIS
+                    <input type="radio" name="dept">CSSE
+                </td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="SUBMIT">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
