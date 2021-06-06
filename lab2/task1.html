@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<style>
+    tr:first-child, tr:last-child {
+        text-align: center;
+    }
+
+    select  {
+        width: 100%;  
+    }
+
+    tr:last-child button,tr:last-child input  {
+        padding: 9px 18px;
+    }
+   
+</style>
+<body>
+    
+    <table border="1">
+        <tr>
+            <td colspan="2"><b>User Form</b></td>
+        </tr>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Enter Address</td>
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td>Select Game</td>
+            <td>
+                <input type="checkbox">Hockey<br>
+                <input type="checkbox">Football<br>
+                <input type="checkbox">Badminton<br>
+                <input type="checkbox">Cricket<br>
+                <input type="checkbox">Volleyball
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Select Your Age</td>
+            <td>
+                <select>
+                    <option value="#" selected>Select Age</option>
+                    <option value="#">18</option>
+                    <option value="#">19</option>
+                    <option value="#">20</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="button">Click Me</button>
+                <button type="button">Reset</button>
+
+                <input type="submit" value="Submit Form">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
