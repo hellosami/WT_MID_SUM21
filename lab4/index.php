@@ -333,8 +333,6 @@
 
     function PrintDay() {
        
-
-  
         for($i = 1; $i <= 31; $i++) {
 
             if($_POST['select-day'] == $i) {
@@ -342,9 +340,6 @@
             } else {
                 echo "<option value='$i'>". $i ."</option>";
             }
-
-       
-            
         }
     }
 
