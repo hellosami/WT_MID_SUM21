@@ -280,8 +280,8 @@ function PrintLocation() {
             <tr>
                 <td>Gender</td>
                 <td>
-                    <input type="radio" name="gender" value="male" <?php if($_POST['gender'] == "male") {echo "checked";} ?>> Male <br>
-                    <input type="radio" name="gender" value="female" <?php if($_POST['gender'] == "female") {echo "checked";} ?>> Female <br>
+                    <input type="radio" name="gender" value="male" <?php if(isset($_POST['gender']) && $_POST['gender'] == "male") {echo "checked";} ?>> Male <br>
+                    <input type="radio" name="gender" value="female" <?php if(isset($_POST['gender']) && $_POST['gender'] == "female") {echo "checked";} ?>> Female <br>
                     <?php echo $err_gender; ?>
                 </td>
             </tr>

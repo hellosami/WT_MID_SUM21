@@ -32,7 +32,6 @@
             $hasError = true;
             $err_rent_type = "<span><sup>*</sup>Select a rent type!</span>";
         }
-
         // price range
         if(empty($price_range) && $price_range != '0') {
             $hasError = true;
@@ -94,17 +93,18 @@
         }
 
 
+        if(!$hasError) {
+            echo "Post Title: " . $post_title . "<br>";
+            echo "Rent Type: " . $_POST['rent-type'] . "<br>";
+            echo "Price: " . $price_range . " (Max)<br>";
+            echo "Location: " . $_POST['location'] . "<br>";
+            echo "Address: " . $address . "<br>";
+            echo "<hr>";
+        }
     }
 
 
-    if(!$hasError) {
-        echo "Post Title: " . $post_title . "<br>";
-        echo "Rent Type: " . $_POST['rent-type'] . "<br>";
-        echo "Price: " . $price_range . " (Max)<br>";
-        echo "Location: " . $_POST['location'] . "<br>";
-        echo "Address: " . $address . "<br>";
-        echo "<hr>";
-    }
+  
 
 
 

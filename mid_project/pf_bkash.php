@@ -87,7 +87,7 @@
         }
         else if(!(strlen($pin) >= 5)) {
             $hasError = true;
-            $err_pin = "<span><sup>*</sup>Must be greater or equal to 5 digits!</span>";
+            $err_pin = "<span><sup>*</sup>Minimum 5 digits!</span>";
         }
 
         // agreement
