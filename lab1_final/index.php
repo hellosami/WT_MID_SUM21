@@ -31,7 +31,7 @@
             foreach($users as $u => $p) {
                 if($uname == $u && $pass == $p) {
                     setcookie("loggeduser", $uname, time()+300, "/");
-                    //$_SESSION["loggeduser"] = $uname;
+                    // $_SESSION["loggeduser"] = $uname;
                     header("Location: dashboard.php");
                 }
             }
