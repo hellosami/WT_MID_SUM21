@@ -1,12 +1,12 @@
 <?php
-// session_start();
-// if(!isset($_SESSION["loggeduser"])) {
-//     header("Location: index.php");
-// }
-
-if(!isset($_COOKIE["loggeduser"])) {
+session_start();
+if(!isset($_SESSION["loggeduser"])) {
     header("Location: index.php");
 }
+
+// else if(!isset($_COOKIE["loggeduser"])) {
+//     header("Location: index.php");
+// }
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,8 +17,8 @@ if(!isset($_COOKIE["loggeduser"])) {
 <body>
     
     <?php
-       echo "Welcome," . $_COOKIE["loggeduser"];
-    //    echo "Welcome, " . $_SESSION["loggeduser"];
+    //    echo "Welcome," . $_COOKIE["loggeduser"];
+       echo "Welcome, " . $_SESSION["loggeduser"];
     ?>
 
 

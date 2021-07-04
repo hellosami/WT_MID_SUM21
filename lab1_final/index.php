@@ -1,5 +1,5 @@
 <?php
-    // session_start();
+    session_start();
 
     $uname = "";
     $pass ="";
@@ -30,8 +30,8 @@
         if(!$hasError) {
             foreach($users as $u => $p) {
                 if($uname == $u && $pass == $p) {
-                    setcookie("loggeduser", $uname, time()+300, "/");
-                    // $_SESSION["loggeduser"] = $uname;
+                    //setcookie("loggeduser", $uname, time()+300, "/");
+                    $_SESSION["loggeduser"] = $uname;
                     header("Location: dashboard.php");
                 }
             }
@@ -49,8 +49,8 @@
 <body>
     
     <form action="" method="POST">
-    username : <input type="text" name="uname"> <?php echo $err_uname?><br>
-    password: <input type="text" name="pass"> <?php echo $err_pass?>
+    username : <input type="text" name="uname"> <?php echo $err_uname?><br><br>
+    password: <input type="text" name="pass"> <?php echo $err_pass?><br><br>
     <input type="submit" value="Login">
     </form>
 </body>
